@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CodePen - DEMO Flexbox</title>
+    </head>
+    <style>
+        body{ padding: 2em;}
+
+        .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer{
+            display: flex;
+            flex-flow: row-wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+
+        .mainContentItem{
+            text-align: left;
+            background: deepskyblue;
+        }
+       
+        .sideBarLeftITem{background: gold;}
+        .sideBarRightITem{background: hotpink;}
+
+        .sideBarItem{flex: 1 0 0; border: 0px solid green;}
+        .mainContentItem{flex: 3 0px;}
+        .sideBarLeftITem{order: 1;}
+        .mainContentItem{order: 2;}
+        .sideBarRightITem{order: 3;}
+    </style>
+    <body>
+        <header class="headerContainer"><h1>HEADER - Sample Flexbox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First article</h2>
+                    <p>What is nature? There is a great deal of talk and endeavour to protect nature, the animals, the birds, the whales and dolphins, to clean the polluted rivers, lakes, fields and so on. Nature is not put together by thought, as religion and belief are.</p>
+
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>Nature is part of our life. We grew out of the seed, the earth, and we are part of all that, but we are rapidly losing the sense that we are animals like the others. Can you have a feeling for a tree, look at it, see the beauty of it, listen to the sound it makes? </p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>One knows all this has been said before in different ways, but we don’t seem to pay much attention. Is it that we are so caught up in our own network of problems, our desires, our urges of pleasure and pain that we never look around, never watch the moon? Watch it. </p>
+
+                </article>
+            </section>
+            <sideBar class="sideBarItem sideBarLeftITem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+            <sideBar class="sideBarItem sideBarRightITem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+
+    </body>
+</html>
+Flex.html
+Displaying Flex.html.
